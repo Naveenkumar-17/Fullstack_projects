@@ -1,0 +1,118 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+ 
+#title{
+    color:white;
+    background: rgb(156, 53, 88);
+    padding:5px;
+    border-radius: 10%;
+}
+#overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:black;
+    z-index: 1;
+    opacity: 0.8;
+    top:0;
+    left: 0;
+    visibility: hidden;
+}
+.content{
+    justify-content: space-around;
+    padding:5px 30px;
+    background: black;
+    color:white;
+    position: relative;
+    width: 300px;
+    height:300px;
+    border-radius: 10%;
+    display: inline-block;
+    margin:10px 30px;
+    overflow: hidden;
+}
+#add{
+    position: fixed;
+    font-size: 100px;
+    width:fit-content;
+    height: fit-content;
+    background:rgb(156, 53, 88);
+    color:white;
+    border-radius: 50%;
+    border: none;
+    bottom:0px;
+    right:0px;
+
+}
+.btn{
+    background:rgb(47, 228, 11);
+    position:relative;
+    left:40%;
+    bottom:5px;
+    border:none;
+    border-radius: 10%;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-weight:bold ;
+}
+#query{
+    position: absolute;
+    z-index:2;
+    color:black;
+    background: rgb(231, 89, 89);
+    width:40%;
+    height:fit-content;
+    display: flex; 
+    visibility:hidden;
+    padding:60px ;
+    padding-top: 10px;
+     
+    font-size: 30px;  
+    justify-content: space-between;
+    
+    border:none;
+    border-radius: 10%;
+    top: 30%;
+    left:30%;
+    backdrop-filter:blur(10px);
+    font-weight: bold;
+}
+ 
+ 
+#descrip{
+    width:180px;
+    overflow-x: scroll;
+}
+input{
+    border: none;
+    border-bottom:2px solid black ;
+    width:100%;
+    top:2px;
+    background: none;
+    color:green;
+    font-size: 15px;
+}
+input:focus{
+    outline: none;
+}
+#query textarea{
+    margin-top:25px;
+    border:2px solid black ;
+    width: 100%; 
+    padding:5px;
+    background: transparent;
+    color:green;
+    font-size: 20px;
+}
+textarea:focus{
+    outline: none;
+}
+#query input::placeholder{
+    color: black;
+}
+#query textarea::placeholder{
+    color: black;
+}
